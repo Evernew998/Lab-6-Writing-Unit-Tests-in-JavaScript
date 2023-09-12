@@ -10,7 +10,9 @@ function convertToUpperCase(inputName){
 /* 
   Add test cases below
 */
-
-
+assert.strictEqual(convertToUpperCase("hello"), "HELLO", "hello uppercase should return HELLO");
+assert.strictEqual(convertToUpperCase("123"), "123", "123 uppercase should return 123");
+assert.strictEqual(convertToUpperCase(""), "", "'' uppercase should return ''");
+assert.strictEqual(convertToUpperCase("!?*"), "!?*", "!?* uppercase should return !?*");
 
 console.log("All Tests Passed.")

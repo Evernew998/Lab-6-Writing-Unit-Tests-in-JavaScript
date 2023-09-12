@@ -10,7 +10,9 @@ function halve(number) {
 /* 
   Add test cases below
 */
-
+assert.strictEqual(halve(4), 2, "4 divided by 2 should return 2");
+assert.strictEqual(halve(-4), -2, "-4 divided by 2 should return -2");
+assert.strictEqual(halve(0), 0, "0 divided by 2 should return 0");
 
 
 console.log("All Tests Passed.")

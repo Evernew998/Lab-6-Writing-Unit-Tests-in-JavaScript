@@ -27,7 +27,10 @@ function calculateGrade(mark) {
 /* 
   Add test cases below
 */
-
-
+assert.strictEqual(calculateGrade(90), "A", "if the mark is 90, function should return 'A'");
+assert.strictEqual(calculateGrade(80), "A", "if the mark is 80, function should return 'A'");
+assert.strictEqual(calculateGrade(61), "B", "if the mark is 61, function should return 'B'");
+assert.strictEqual(calculateGrade(60), "C", "if the mark is 60, function should return 'C'");
+assert.strictEqual(calculateGrade(50), "F", "if the mark is 50, function should return 'F'");
 
 console.log("All Tests Passed.")

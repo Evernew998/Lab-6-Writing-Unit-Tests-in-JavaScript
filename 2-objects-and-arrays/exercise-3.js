@@ -10,6 +10,10 @@ const tenAndGreaterOnly = (arr) => {
 /* 
   Add test cases below
 */
-
+assert.deepStrictEqual(tenAndGreaterOnly([0, 1, 2]), [], "tenAndGreaterOnly([0, 1, 2]) should return []");
+assert.deepStrictEqual(tenAndGreaterOnly([0, -1, -2]), [], "tenAndGreaterOnly([0, -1, -2]) should return []");
+assert.deepStrictEqual(tenAndGreaterOnly([]), [], "tenAndGreaterOnly([]) should return []");
+assert.deepStrictEqual(tenAndGreaterOnly([0, 1, 10]), [10], "tenAndGreaterOnly([0, 1, 10]) should return [10]");
+assert.deepStrictEqual(tenAndGreaterOnly([0, 10, 20]), [10, 20], "tenAndGreaterOnly([0, 10, 20]) should return [10, 20]");
 
 console.log("All Tests Passed.")

@@ -18,5 +18,8 @@ function negativeOrPositive(number) {
 /* 
   Add test cases below
 */
+assert.strictEqual(negativeOrPositive(3), "positive", "number 3 should return 'positive'");
+assert.strictEqual(negativeOrPositive(0), "positive", "number 0 should return 'positive'");
+assert.strictEqual(negativeOrPositive(-3), "negative", "number -3 should return 'negative'");
 
-console.log("All Tests Passed.")
+console.log("All Tests Passed.");

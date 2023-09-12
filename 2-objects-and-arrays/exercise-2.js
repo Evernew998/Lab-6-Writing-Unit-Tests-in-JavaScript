@@ -12,6 +12,11 @@ const first = (input_array, number_of_elements) => {
 /* 
   Add test cases below
 */
-
+assert.deepStrictEqual(first([1, 2, 3], 2), [1, 2], "first([1, 2, 3], 2) should return [1, 2]");
+assert.deepStrictEqual(first([1, 2, 3], 10), [1, 2, 3], "first([1, 2, 3], 10) should return [1, 2, 3]");
+assert.deepStrictEqual(first([1, 2, 3], 0), [], "first([1, 2, 3], 0) should return []");
+assert.deepStrictEqual(first([1, 2, 3], -1), [1, 2], "first([1, 2, 3], -1) should return [1, 2]");
+assert.deepStrictEqual(first([1, 2, 3], -2), [1], "first([1, 2, 3], -2) should return [1]");
+assert.deepStrictEqual(first([1, 2, 3], -3), [], "first([1, 2, 3], -3) should return []");
 
 console.log("All Tests Passed.")
